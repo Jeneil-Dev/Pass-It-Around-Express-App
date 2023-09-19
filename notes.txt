@@ -1,0 +1,31 @@
+Node Commands and directions 
+
+- cd into your folder
+- Npm init -y or npm init - to downlaod package.json
+- Npm install express
+- require express in server.js and store + call the express function to start the app
+- set up ports and listen for requests
+- run the file using node server.js in terminal OR download nodemon using npm install nodemon , run using nodemon server.js OR by firsst creating a dev script in package.json by adding 'dev':'nodemon server.js' under scripts and running npm run dev in terminal
+- set up the route handler to react to requests using app.get() that responds to a get request coming in
+- store your port in an environment veriable by first creating a .env file, creating the variable there (PORT: 4000) to use, download by using npm install dotenv in terminal
+- require ('dovenv').config() in server.js, then use using process.env.PORT
+
+
+** open terminal on folder
+
+
+                            API Endpoints
+request handlers (GET, POST, GET, DELETE, PATCH)
+
+GET          /workouts       --> Gets all of the workout documents
+
+POST         /workouts       --> Creates a new workout document
+
+GET          /workouts/:id   --> Gets a single workout document
+
+DELETE       /workouts/:id   --> Deletes a single workout
+
+PATCH        /workouts/:id   --> Updates a single workout
+
+
+the id represents some id of a particular workout
